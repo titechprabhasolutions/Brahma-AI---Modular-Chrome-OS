@@ -1,0 +1,7 @@
+{
+  "name": "Brahma - Modular Chrome OS",
+  "description": "An AI-powered modular browser environment with switchable modes for Study, Gaming, and Development, powered by Brahma AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

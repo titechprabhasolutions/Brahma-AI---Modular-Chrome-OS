@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Brahma - Modular Chrome OS",
+  "version": "1.0.0",
+  "description": "Brahma - Modular Chrome OS: Next-gen AI-powered browser workspace, floating tools, smart distraction shield, and multi-mode workflows.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Brahma - Modular Chrome OS"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "proxy",
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "assets/*", "icon48.png", "icon128.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
