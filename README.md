@@ -47,25 +47,11 @@ Powered by **Google Gemini 2.5 Pro** (with automatic quota fallback to **Gemini 
 
 ---
 
-### 🛡️ 3. Brahma Shield (Focus Firewall & Proxy Engine)
-* Enforces distraction blocking via Chrome's `declarativeNetRequest` session rule engine.
-* Integrated proxy router with fail-open safeguards and exit-node IP geolocation inspection.
-* Automatically triggers dynamic focus alerts and workspace blur if distraction triggers occur.
-
----
-
 ### 🌐 4. Ubiquitous In-Page Copilot (Content Script)
 * Non-intrusive floating action button (**FAB**) injected into visited web pages.
 * Context-aware URL detection (YouTube video summarizer, GitHub repo explainer, Wikipedia notes generator).
 * Instant text selection menu: Highlight text on any website to summarize, explain, or capture into your persistent Notes Vault.
 
----
-
-### 🔮 5. Spatial 3D Holographic Core (WebGL + Computer Vision)
-* Three.js 3D orb with multi-ring particle geometry, custom GLSL chromatic aberration, and `UnrealBloomPass` post-processing.
-* Real-time **MediaPipe AI Hand Tracking** (`@mediapipe/tasks-vision`) running on GPU/WASM:
-  * **Pinch + Drag**: Rotates the holographic core in 3D space.
-  * **Two-Hand Pinch + Spread**: Zooms in and out dynamically.
 
 ---
 
